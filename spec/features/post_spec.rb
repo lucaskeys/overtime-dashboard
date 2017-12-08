@@ -13,9 +13,8 @@ describe 'navigate' do
   end
 
   describe "creation" do
-    it "has a form that can be reached" do
+    before do
       visit new_post_path
-      expect(page.status_code).to eq(200)
     end
 
     it "can be created from new from page" do
